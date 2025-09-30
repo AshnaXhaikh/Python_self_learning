@@ -1,7 +1,8 @@
-🎯 Purpose of the file_processor.py 
+##🎯 Purpose of the file_processor.py 
+
 The primary purpose of this Python script is to demonstrate the practical application of the tqdm library by simulating a long-running batch process. It is a focused mini-project designed for monitoring code execution.
 
-Key Objectives:
+### Key Objectives:
 Illustrate tqdm: Show how to easily wrap any iterable (file_list) with tqdm() to create a live, informative progress bar.
 
 Code: for file_name in tqdm(file_list, desc="Processing Files")
