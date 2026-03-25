@@ -1,7 +1,5 @@
 
 ---
-
-```markdown
 # Lambda Functions (Anonymous Functions)
 
 ## What are Lambda Functions?
@@ -17,3 +15,4 @@ A **lambda function** is a small, anonymous function that can be defined inline.
 
 ```python
 lambda arguments: expression
+```
