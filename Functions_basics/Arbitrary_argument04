@@ -1,0 +1,50 @@
+```
+## 4. Arbitrary Arguments (`*args` and `**kwargs`)
+
+### `*args` (Non-Keyword Arguments)
+
+Collects extra positional arguments as a **tuple**.
+
+```python
+def sum_all(*args):
+    """Sum any number of arguments"""
+    total = 0
+    for num in args:
+        total += num
+    return total
+
+print(sum_all(1, 2, 3))        # Output: 6
+print(sum_all(10, 20, 30, 40)) # Output: 100
+print(sum_all())               # Output: 0 (empty tuple)
+```
+
+### `**kwargs` (Keyword Arguments)
+
+Collects extra keyword arguments as a **dictionary**.
+
+```python
+def display_info(**kwargs):
+    """Display any number of key-value pairs"""
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+display_info(name="Alice", age=25, city="New York")
+# Output:
+# name: Alice
+# age: 25
+# city: New York
+```
+
+### Combining `*args` and `**kwargs`
+
+```python
+def flexible_function(*args, **kwargs):
+    """Accepts any combination of arguments"""
+    print("Positional arguments:", args)
+    print("Keyword arguments:", kwargs)
+
+flexible_function(1, 2, 3, name="Alice", age=25)
+# Output:
+# Positional arguments: (1, 2, 3)
+# Keyword arguments: {'name': 'Alice', 'age': 25}
+```
