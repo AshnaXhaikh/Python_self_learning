@@ -1,0 +1,45 @@
+---
+
+## Pass by Reference vs Pass by Value
+
+### Important Concept in Python
+
+In Python, variables are **references to objects**. When passed to a function:
+- The **reference** is passed (by object reference)
+- Behavior depends on **mutability** of the object
+
+---
+
+### Immutable Objects (String, Integer, Float, Tuple)
+
+Changes **inside** the function do NOT affect the original object.
+
+```python
+def modify_immutable(x):
+    x = x + 10  # Creates new object
+    print(f"Inside function: {x}")
+
+value = 5
+modify_immutable(value)  # Output: Inside function: 15
+print(f"Outside function: {value}")  # Output: Outside function: 5
+```
+
+**Why?** Integers are immutable. The `x` parameter references a new object after reassignment.
+
+---
+
+### Mutable Objects (List, Dictionary, Set)
+
+Changes **inside** the function DO affect the original object.
+
+```python
+def modify_mutable(lst):
+    lst.append(4)  # Modifies the original list
+    lst[0] = 99    # Modifies in place
+    print(f"Inside function: {lst}")
+
+numbers = [1, 2, 3]
+modify_mutable(numbers)  # Output: Inside function: [99, 2, 3, 4]
+print(f"Outside function: {numbers}")  # Output: Outside function: [99, 2, 3, 4]
+```
+
