@@ -1,0 +1,40 @@
+Using pass in Classes
+## Empty Class Definition
+
+```python
+class EmptyClass:
+    pass  # No methods or attributes yet
+
+# Instances can be created
+obj = EmptyClass()
+print(type(obj))  # Output: <class '__main__.EmptyClass'>
+print(obj)        # Output: <__main__.EmptyClass object at 0x...>
+```
+
+## Class with Placeholder Methods
+```python
+class Person:
+    """Person class with structure defined"""
+    
+    def __init__(self, name, age):
+        """Initialize person with name and age"""
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        """Placeholder for greet method"""
+        pass  # TODO: Implement greeting logic
+    
+    def celebrate_birthday(self):
+        """Placeholder for birthday celebration"""
+        pass  # TODO: Implement birthday logic
+    
+    def get_details(self):
+        """Returns person details"""
+        return f"{self.name}, {self.age} years old"
+
+# Creating an instance
+p = Person("Emily", 30)
+print(p.get_details())  # Output: Emily, 30 years old
+p.greet()       
+```
