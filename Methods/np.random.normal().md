@@ -14,7 +14,7 @@ Example:
 
 Average bill $22, spread of $9, 90 customersdinner = np.random.normal(22, 9, 90) 
 
-```
+"""
 1. Why you see negative values
 Even though your mean is 
  and standard deviation (SD) is 
@@ -26,4 +26,4 @@ Even though your mean is
 
 
 Since you generated 90 points, there is a statistical chance that a few points will fall more than 2 SDs away from the mean, dropping below zero.
-```
+"""
