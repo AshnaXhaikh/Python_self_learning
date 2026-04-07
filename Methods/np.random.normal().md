@@ -19,13 +19,9 @@ Average bill $22, spread of $9, 90 customersdinner = np.random.normal(22, 9, 90)
 Even though your mean is 
  and standard deviation (SD) is 
 , the "13 to 31" range only covers about 68% of the data (the 68-95-99.7 rule).
-Mean - 1 SD: 
-
-
-Mean - 2 SD: 
-
-
-Mean - 3 SD: 
+* Mean - 1 SD: $22 - 9 = 13$
+* Mean - 2 SD: $22 - 18 = 4$
+* Mean - 3 SD: $22 - 27 = -5$ 
 
 
 
