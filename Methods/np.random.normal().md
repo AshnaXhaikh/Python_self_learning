@@ -14,6 +14,8 @@ Example:
 
 # Average bill $22, spread of $9, 90 customersdinner = np.random.normal(22, 9, 90) 
 
+
+
 ```
 1. Why you see negative values
 Even though your mean is 
